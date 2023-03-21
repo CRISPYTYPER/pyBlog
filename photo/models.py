@@ -9,7 +9,7 @@ class Album(models.Model):
     description = models.CharField('One Line Description', max_length=100, blank=True)
 
     class Meta:
-        ordering - ('name',)
+        ordering = ('name',)
 
         def __str__(self):
             return self.name
