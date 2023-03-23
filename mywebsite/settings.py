@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'widget_tweaks',
     'bookmark.apps.BookmarkConfig',
     'blog.apps.BlogConfig',
     'taggit.apps.TaggitAppConfig',
@@ -125,6 +126,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+LOGIN_REDIRECT_URL = '/'
 
 TAGGIT_CASE_INSENSITIVE = True
 TAGGIT_LIMIT = 50
